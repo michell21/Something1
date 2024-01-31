@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="768">
+    <Grid>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,10,315,165"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="94,365,0,0" VerticalAlignment="Top" Width="59" Click="Button_Click"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="212,365,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_1"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="344,365,0,0" VerticalAlignment="Top" Width="64" Click="Button_Click_2"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="33,314,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" PreviewTextInput="textBox1_PreviewTextInput"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="454,314,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="316,314,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="172,314,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="combobox1" HorizontalAlignment="Left" Margin="612,314,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+        </ComboBox>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Margin="612,278,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" PreviewTextInput="textBox5_PreviewTextInput"/>
+
+    </Grid>
+</Window>
